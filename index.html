@@ -160,6 +160,23 @@
       </div>
     </div>
   </div>
+  <!-- BRAND SECTION -->
+<div class="brand-section" data-aos="fade-up" data-aos-duration="2000">
+  <div class="container">
+    <h2 class="text-center mb-4">Brands I Worked With</h2>
+
+    <div class="owl-carousel owl-theme owl-brands">
+      <div class="item"><img src="images/brand1.png" alt=""></div>
+      <div class="item"><img src="images/brand1.png" alt=""></div>
+      <div class="item"><img src="images/brand1.png" alt=""></div>
+      <div class="item"><img src="images/brand1.png" alt=""></div>
+      <div class="item"><img src="images/brand1.png" alt=""></div>
+      <div class="item"><img src="images/brand1.png" alt=""></div>
+    </div>
+
+  </div>
+</div>
+
   <div class="education-section" id="portfolio">
     <div class="abt-shade">
       <img src="images/about-shade.png" alt="">
@@ -674,7 +691,26 @@
       wrap: false
     })
   </script>
+  <script>
+    $('.owl-brands').owlCarousel({
+  loop: true,
+  margin: 40,
+  autoplay: true,
+  autoplayTimeout: 2000,
+  autoplaySpeed: 1200,
+  smartSpeed: 900,
+  dots: false,
+  nav: false,
+  responsive: {
+    0: { items: 2 },
+    480: { items: 3 },
+    768: { items: 4 },
+    1000: { items: 5 },
+    1200: { items: 6 }
+  }
+});
 
+  </script>
 
 </body>
 

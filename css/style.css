@@ -71,6 +71,11 @@
     font-style: normal;
     src: local('MADE-Outer-Sans-Light'), local(' MADE-Outer-Sans-Light'), url('../fonts/MADE-Outer-Sans-Light.otf') format("opentype")
 }
+@font-face {
+    font-family: practa;
+    font-style: normal;
+    src: local('MADE-Outer-Sans-Light'), local(' MADE-Outer-Sans-Light'), url('../fonts/Practa.otf') format("opentype")
+}
 
 html {
     scroll-behavior: smooth;
@@ -250,7 +255,7 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
 }
 
 .banner-sec .banner-cnt h1 span {
-    color: #fe8d6f;
+    color: #ff7150 ;
     letter-spacing: 2px;
 }
 
@@ -291,7 +296,7 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
     font-size: 65px;
     color: #fff;
     padding-bottom: 15px;
-    border-bottom: 20px solid #fe8d6f;
+    border-bottom: 20px solid #ff7150;
     width: max-content;
     margin-bottom: 30px;
     padding-right: 70px;
@@ -328,7 +333,7 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
     font-size: 65px;
     color: #fff;
     padding-bottom: 15px;
-    border-bottom: 20px solid #fe8d6f;
+    border-bottom: 20px solid #ff7150;
     width: max-content;
     margin-bottom: 30px;
     padding-right: 70px;
@@ -458,11 +463,11 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
 }
 
 .process-section .owl-awards .owl-item.active.center .process-cnt h5 {
-    color: #fe8d6f;
+    color: #ff7150;
 }
 
 .process-section .owl-awards .owl-item.active.center .process-cnt p {
-    background-color: #fe8d6f;
+    background-color: #ff7150;
 }
 
 .process-section .owl-awards .owl-item.active.center .process-cnt img {
@@ -501,7 +506,7 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
 
 .projection-section ul.nav.nav-pills li button:hover,
 .projection-section ul.nav.nav-pills li button.active {
-    color: #fe8d6f;
+    color: #ff7150;
 }
 
 .projection-section ul.nav.nav-pills li {
@@ -517,7 +522,7 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
 
 #footer p.last-para {
     padding: 14px 0px;
-    background-color: #fe8d6f;
+    background-color: #ff7150;
     text-align: center;
     font-size: 18px;
 }
@@ -560,7 +565,7 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
     width: 50px;
     height: 50px;
     border-radius: 5px;
-    background-color: #fe8d6f;
+    background-color: #ff7150;
     color: #21201e;
     padding: 10px 0px;
     font-size: 25px;
@@ -689,7 +694,7 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
     }
 
     .projection-section ul.nav.nav-pills li button {
-        border: 1px solid #fe8d6f;
+        border: 1px solid #ff7150;
         margin: 0px 5px;
     }
 }
@@ -1049,3 +1054,27 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
 .horizontal-scroll::-webkit-scrollbar-track {
     background: transparent;
 }
+.brand-section img {
+  width: 150px;
+  height: auto;
+  opacity: 0.9;
+  transition: 0.3s;
+  margin: auto;
+}
+
+.brand-section img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.brand-section {
+  padding: 60px 0;
+}
+.brand-section {
+ h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 44px;
+    font-family: Poppins-Medium;
+    text-transform: capitalize;
+}}
