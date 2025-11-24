@@ -87,7 +87,9 @@
         <div class="col-lg-6">
           <div class="banner-cnt">
             <p>Hello !</p>
-            <h1>I’m <span>Naveen</span></h1>
+            <h1 class="typing"><span class="type-text"></span></h1>
+
+            <!-- <h1>I’m <span>Naveen</span></h1> -->
             <h3>
               Graphic <br> Designer
             </h3>
@@ -135,7 +137,8 @@
     </div>
   </div>
   <div class="about-section" id="about" data-aos="fade-up" data-aos-duration="2000">
-    <div class="container">
+    <div class="about-bgnew">
+      <div class="container">
       <div class="row">
         <div class="col-lg-6">
           <div class="about-img">
@@ -159,6 +162,7 @@
         </div>
       </div>
     </div>
+    </div>
   </div>
   <!-- EXPERIENCE / STATS SECTION -->
    <div class="stats-section-bg">
@@ -166,20 +170,33 @@
   <div class="container">
     <div class="stats-wrapper">
       
-      <div class="stat-box left">
-        <h2>3+</h2>
-        <p>Years of Experience</p>
-      </div>
+<div class="stat-box left">
+  <h2 class="purecounter" 
+      data-purecounter-start="0"
+      data-purecounter-end="3"
+      data-purecounter-duration="2">
+  </h2>
+  <p>Years of Experience</p>
+</div>
 
-      <div class="stat-box center">
-        <h2>50+</h2>
-        <p>Projects Finished</p>
-      </div>
+<div class="stat-box center">
+  <h2 class="purecounter" 
+      data-purecounter-start="0"
+      data-purecounter-end="50"
+      data-purecounter-duration="2">
+  </h2>
+  <p>Projects Finished</p>
+</div>
 
-      <div class="stat-box right">
-        <h2>35+</h2>
-        <p>Happy Clients</p>
-      </div>
+<div class="stat-box right">
+  <h2 class="purecounter" 
+      data-purecounter-start="0"
+      data-purecounter-end="35"
+      data-purecounter-duration="2">
+  </h2>
+  <p>Happy Clients</p>
+</div>
+
 
     </div>
   </div>
@@ -237,20 +254,19 @@
             <div class="sklll-img">
               <img src="images/id.png" alt="">
             </div>
+             <div class="sklll-img">
+              <img src="images/xd.png" alt="">
+            </div>
             
           </div>
           <div class="skill-cnt">
-            <div class="sklll-img">
-              <img src="images/xd.png" alt="">
-            </div>
+           
             <div class="sklll-img">
               <img src="images/max.png" alt="">
             </div>
             <div class="sklll-img">
               <img src="images/figma.png" alt="">
             </div>
-          </div>
-          <div class="skill-cnt">
             <div class="sklll-img new">
               <img src="images/skillnew1.png" alt="">
             </div>
@@ -311,7 +327,7 @@
   </div>
   <div class="process-section">
     <div class="container">
-      <h2>This is how I start my design process</h2>
+      <h2>How I start my design process</h2>
       <div class="owl-carousel owl-theme owl-awards">
         <div class="item">
           <div class="process-cnt">
@@ -463,6 +479,9 @@
             <div class="item">
               <img src="images/socialmedia5.jpg" alt="">
             </div>
+            <div class="item">
+              <img src="images/s6.jpg" alt="">
+            </div>
           </div>
         </div>
         <div class="tab-pane fade" id="pills-contact3" role="tabpanel" aria-labelledby="pills-contact-tab3">
@@ -479,7 +498,8 @@
     </div>
   </div>
   <div id="footer">
-    <div class="container">
+    <div class="footerbgnew">
+      <div class="container">
       <h3>Contact <span>Me</span></h3>
       <p class="together">Let's work together</p>
       <div class="contact-cnt">
@@ -504,6 +524,7 @@
           <p><a href="https://www.instagram.com/_navin_mc_?igsh=eXQ4Y28zYm43dGpv" target="_blank">_navin_mc_</a></p>
         </div>
       </div>
+    </div>
     </div>
     <p class="last-para">
       Copyright ©<span id="year"></span> Naveen.R - Designer</a>
@@ -753,6 +774,62 @@
 });
 
   </script>
+ <script>
+const texts = ["I'm Naveen"];
+let speed = 120;
+let index = 0;      // which word
+let charIndex = 0;  // which letter
+let deleting = false;
+
+function typeLoop() {
+    const currentText = texts[index];
+    const display = document.querySelector(".type-text");
+
+    if (!deleting) {
+        // typing forward
+        display.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+
+        if (charIndex === currentText.length) {
+            deleting = true;
+            setTimeout(typeLoop, 1500); // pause before deleting
+            return;
+        }
+    } else {
+        // deleting text
+        display.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex === 0) {
+            deleting = false;
+            index = (index + 1) % texts.length; // next word
+        }
+    }
+
+    setTimeout(typeLoop, deleting ? 80 : speed);
+}
+
+window.onload = typeLoop;
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  let isCounted = false;
+  const section = document.querySelector(".stats-section");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if(entry.isIntersecting && !isCounted) {
+        isCounted = true;
+        new PureCounter(); // re-run animation
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(section);
+
+});
+</script>
 
 </body>
 
