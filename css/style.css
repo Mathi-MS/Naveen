@@ -263,7 +263,7 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
     font-size: 97px;
     color: #fff;
     text-transform: uppercase;
-    font-family: Poppins-Light;
+    font-family: practa;
     line-height: 0.8;
 }
 
@@ -300,6 +300,7 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
     width: max-content;
     margin-bottom: 30px;
     padding-right: 70px;
+    font-family: practa;
 }
 
 .about-section p {
@@ -337,14 +338,14 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
     width: max-content;
     margin-bottom: 30px;
     padding-right: 70px;
-    font-family: Poppins-SemiBold;
+    font-family: practa;
 }
 
 .education-section h3 {
     font-size: 65px;
     color: #fff;
     margin-bottom: 10px;
-    font-family: Poppins-SemiBold;
+    font-family: practa;
 }
 
 
@@ -381,7 +382,7 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
     text-align: center;
     color: #fff;
     font-size: 80px;
-    font-family: Poppins-SemiBold;
+    font-family: practa;
     text-transform: capitalize;
 }
 
@@ -419,7 +420,7 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
     text-align: center;
     color: #fff;
     font-size: 44px;
-    font-family: Poppins-Medium;
+    font-family: practa;
     text-transform: capitalize;
 }
 
@@ -487,7 +488,7 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
     text-align: center;
     color: #fff;
     margin-bottom: 40px;
-    font-family: Poppins-SemiBold;
+    font-family: practa;
     font-size: 60px;
 }
 
@@ -532,7 +533,7 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
     padding-top: 70px;
     font-size: 65px;
     text-align: center;
-    font-family: Poppins-Medium;
+    font-family: practa;
     margin-bottom: 0px;
     line-height: 1;
 }
@@ -1075,6 +1076,6 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
     text-align: center;
     color: #fff;
     font-size: 44px;
-    font-family: Poppins-Medium;
+    font-family:practa;
     text-transform: capitalize;
 }}
