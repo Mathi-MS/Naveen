@@ -231,6 +231,8 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
     position: relative;
     padding: 70px 0px;
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
 }
 .banner-sec .banner-img{
     position: absolute;
@@ -244,7 +246,7 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
 }
 
 .banner-sec .banner-cnt {
-    position: absolute;
+    /* position: absolute; */
     bottom: 70px;
     left: 70px;
 }
@@ -285,7 +287,7 @@ nav.navbar .navbar-nav .nav-item .nav-link:hover {
     background-attachment: fixed;
 }
 .about-section .about-bgnew {
-    background-color: rgba(0, 0, 0, 0.842);
+    background-color: rgba(0, 0, 0, 0.53);
     padding: 70px 0px;
 }
 .about-section .about-img{
@@ -672,6 +674,12 @@ flex-direction: column;
         bottom: 20px;
         left: 20px;
         height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            text-align: center;
+        }
     }
 
     .banner-sec .banner-cnt p {
@@ -690,12 +698,22 @@ flex-direction: column;
         height: 500px;
     }
 
-    .education-section h2,
+    .about-section p {
+        text-align: center;
+    }
+        .education-section h2,
     .about-section h2 {
         font-size: 50px;
-        padding-right: 40px;
+        padding-right: 0px;
+        width: max-content;
+        margin: auto;
     }
-
+    .education-section h5,p{
+        text-align: center;
+    }
+    .education-section h3 {
+        text-align: center;
+    }
     .education-section .skill-cnt {
         flex-wrap: wrap;
         justify-content: center;
